@@ -1,0 +1,54 @@
+{
+  "env": {
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["@typescript-eslint", "import", "simple-import-sort", "unused-imports", "graphql"],
+  "extends": [
+    // https://www.npmjs.com/package/eslint-config-airbnb-typescript
+    "airbnb-typescript/base",
+
+    // https://www.npmjs.com/package/@typescript-eslint/eslint-plugin
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+
+    // https://www.npmjs.com/package/eslint-plugin-import
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript",
+
+    /**
+     * Make sure to put prettier last, so it gets the chance to override other
+     * configs.
+     *
+     * @see https://github.com/prettier/eslint-config-prettier
+     */
+    "prettier"
+  ],
+  "rules": {
+    // ESLint rules
+    "func-style": ["error", "declaration"],
+    "no-console": "warn",
+    "no-use-before-define": "off",
+
+    // https://www.npmjs.com/package/eslint-plugin-import
+    "import/no-default-export": "error",
+
+    // https://www.npmjs.com/package/eslint-plugin-simple-import-sort
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+
+    // @typescript-eslint
+    "@typescript-eslint/no-unsafe-call": "off",
+    "@typescript-eslint/no-unsafe-member-access": "off",
+
+    // https://www.npmjs.com/package/eslint-plugin-unused-imports
+    "unused-imports/no-unused-imports": "error"
+  }
+}
