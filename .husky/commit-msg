@@ -1,4 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npm run husky:commit-msg -- -E "$1"
+npm run husky:commit-msg -- --edit "$1"
