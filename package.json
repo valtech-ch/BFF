@@ -12,6 +12,8 @@
     "husky:pre-commit": "lint-staged",
     "lint": "eslint \"src/**/*.ts\" --fix",
     "prepare": "husky install",
+    "prettier:check": "prettier --check .",
+    "prettier:write": "prettier --write .",
     "start": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
