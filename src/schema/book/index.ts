@@ -1,4 +1,5 @@
 import { gql } from 'apollo-server'
+
 import { books } from './books'
 
 const bookTypeDefs = gql`

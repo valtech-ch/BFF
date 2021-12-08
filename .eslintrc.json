@@ -47,6 +47,7 @@
     // @typescript-eslint
     "@typescript-eslint/no-unsafe-call": "off",
     "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/no-unsafe-assignment": "off",
 
     // https://www.npmjs.com/package/eslint-plugin-unused-imports
     "unused-imports/no-unused-imports": "error"

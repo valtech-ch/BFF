@@ -6,7 +6,7 @@ const booksTypeDefs = gql`
   }
 `
 
-async function booksResolver() {
+function booksResolver() {
   return [
     {
       title: 'The Awakening',

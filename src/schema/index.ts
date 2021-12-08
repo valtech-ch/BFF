@@ -1,5 +1,5 @@
 import { makeExecutableSchema } from '@graphql-tools/schema'
-import { gql } from 'apollo-server-core'
+import { gql } from 'apollo-server'
 import merge from 'lodash.merge'
 
 import { book } from './book'
