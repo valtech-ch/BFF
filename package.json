@@ -7,7 +7,7 @@
   "author": "",
   "license": "ISC",
   "scripts": {
-    "tsc": "tsc --noEmit --skipLibCheck --esModuleInterop",
+    "tsc": "tsc --project tsconfig.json",
     "husky:commit-msg": "commitlint",
     "husky:pre-commit": "lint-staged",
     "lint": "eslint \"src/**/*.ts\" --fix",
